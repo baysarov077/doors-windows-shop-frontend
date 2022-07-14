@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deletePosts } from '../../app/reducers/postCreator';
 import './Post.css'
 import {FaTrashAlt} from 'react-icons/fa'
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 const Post = ({img, title, text, id}) => {
 
@@ -68,7 +69,7 @@ const Post = ({img, title, text, id}) => {
           {
             open &&
             <div className='text-modal'>
-              <span className='close-text-modal'>закрыть</span>
+              <span onClick={() => setOpen(false)} className='close-text-modal'><HighlightOffIcon fontSize='medium' /></span>
               <p className='full-text'>
                 {text}
               </p>

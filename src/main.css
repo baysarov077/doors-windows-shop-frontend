@@ -97,6 +97,51 @@ h1 {
   cursor: pointer;
 }
 
+.modal-social {
+  width: 30%;
+  padding: 3rem;
+  background-color:rgb(28, 135, 134);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 35%;
+  z-index: 3;
+}
+
+.modal-links {
+  text-decoration: none;
+  color: #fff
+}
+
+.close-btn {
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transition: 0.4s;
+}
+
+.close-btn:hover {
+  color: #000;
+  transition: 0.4s;
+  transform: rotate(360deg) scale(1.5);
+}
+
+.close-btn-second {
+  color: #000;
+  transition: 0.4s;
+}
+.close-btn-second:hover {
+  color: rgb(28, 135, 134);
+  transition: 0.4s;
+  transform: rotate(360deg) scale(1.5);
+}
+
+.modal-h2 {
+  color: #fff;
+  text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
   .main-block {
     display: flex;
@@ -125,6 +170,24 @@ h1 {
   }
 }
 
+@media screen and (max-width: 760px) {
+  .social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .modal-h2 {
+    font-size: 16px;
+  }
+
+  .modal-social {
+    width: 50%;
+    left: 25%;
+  }
+}
+
 @media screen and (max-width: 552px) {
   .buy-now-btn {
     width: 55%;
@@ -134,5 +197,12 @@ h1 {
   }
   h1 {
     font-size: 44px;
+  }
+  .modal-social {
+    width: 50%;
+    left: 25%;
+  }
+  .modal-h2 {
+    font-size: 12px;
   }
 }

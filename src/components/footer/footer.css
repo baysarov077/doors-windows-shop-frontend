@@ -13,16 +13,21 @@ footer {
 .social-title {
   font-size: 18px;
   font-weight: bold;
+  color: #fff
 }
 
 .social-list {
+  color: #fff;
   width: 80%;
+  display: flex;
+  justify-content: space-between;
   margin: auto;
   margin-top: 1rem;
 }
 
 .street {
   text-align: center;
+  color: #fff
 }
 
 .footer-list {
@@ -33,12 +38,24 @@ footer {
 
 .footer-logo {
   width: 5%;
-  margin-right: 5rem;
+
+}
+
+.list-item:hover {
+  color: #000;
+  transform: scale(1.5);
+  transition: 1s;
 }
 
 @media screen and (max-width: 720px) {
   .footer-logo {
     width: 10%;
+  }
+  .footer-list {
+    text-align: center;
+  }
+  .social-title {
+    text-align: center;
   }
 }
 

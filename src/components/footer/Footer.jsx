@@ -10,18 +10,18 @@ const Footer = () => {
   return (
     <footer>
       <div className='social'>
+      <img className='footer-logo' width={'100%'} src={logo} alt="" />  
         <div className='social-list-block'>
           <div>
-            <span className='social-title'>Наши социальные сети:</span>
+            <p className='social-title'>Наши социальные сети:</p>
           </div>
           <div className='social-list'>
-            <InstagramIcon fontSize='large' />
-            <WhatsAppIcon fontSize='large' />
-            <YouTubeIcon fontSize='large' />
-            <TelegramIcon fontSize='large' />
+            <InstagramIcon className='list-item' fontSize='large' />
+            <WhatsAppIcon className='list-item' fontSize='large' />
+            <YouTubeIcon className='list-item' fontSize='large' />
+            <TelegramIcon className='list-item' fontSize='large' />
           </div>
-        </div>
-            <img className='footer-logo' width={'100%'} src={logo} alt="" />        
+        </div>      
         <div className='street'>
           <div>Адрес:</div>
           <div>ул Г.Трошева 95</div>
