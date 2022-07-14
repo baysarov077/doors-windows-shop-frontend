@@ -1,0 +1,12 @@
+.yand-heading {
+  font-size: 44px;
+  text-align: center;
+  color: rgb(28, 135, 134);
+  margin: 50px 0
+}
+
+@media screen and (max-width: 552px) {
+  .yand-heading {
+    font-size: 34px;
+  }
+}
