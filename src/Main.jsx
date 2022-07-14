@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Cards from './components/card/Cards';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -8,6 +8,9 @@ import icon from './img/58.png'
 import './main.css'
 
 const Main = () => {
+
+  const [open, setOpen] = useState(false)
+
   return (
     <div>
       <Header />
@@ -25,8 +28,20 @@ const Main = () => {
         <Slider />
         <Cards />
         <YandMap />
-        <button className='subm'>Связаться с нами</button>
+        <button onClick={() => setOpen(!open)} className='subm'>Связаться с нами</button>
       </div>
+      {
+        open &&
+        <div className='call-modal'>
+          <span onClick={() => setOpen(false)} className='close-call'>закрыть</span>
+          <div>
+            <h3 className='call-h3'>Звоните в рабочее время</h3>
+          </div>
+          <div>
+            <span className='call-number'>8-800-555-35-35</span>
+          </div>
+        </div>
+      }
       <Footer />
     </div>
   );

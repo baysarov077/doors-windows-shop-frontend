@@ -34,6 +34,7 @@ const handleClickLogo = () => {
       {
         open &&
         <div className='contacts-modal'>
+          <span className='contact-close' onClick={() => setOpen(!open)}>закрыть</span>
           <div className='contacts-flex'>
             <span className='contact-word'>Контакты:</span>
           <div>

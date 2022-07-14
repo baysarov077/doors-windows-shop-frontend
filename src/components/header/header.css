@@ -85,6 +85,19 @@ nav {
   color: rgb(28, 135, 134)
 }
 
+.contact-close {
+  font-size: 14px;
+  color:rgba(80, 77, 77, 0.3);
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1270px) {
+  .contacts-flex {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .logo-img {
     /* display: none; */
@@ -126,6 +139,9 @@ nav {
   }
   nav {
     justify-content: center;
+  }
+  .contacts-flex {
+    width: 75%;
   }
 }
 

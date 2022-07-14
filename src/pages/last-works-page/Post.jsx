@@ -68,7 +68,8 @@ const Post = ({img, title, text, id}) => {
           {
             open &&
             <div className='text-modal'>
-              <p>
+              <span className='close-text-modal'>закрыть</span>
+              <p className='full-text'>
                 {text}
               </p>
             </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createPosts, getPosts } from '../../app/reducers/postCreator';
-import { getUsers } from '../../app/reducers/usersSlice';
+import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import Post from './Post';
 import './works.css'
@@ -43,6 +43,7 @@ const Works = () => {
   }
 
   return (
+    <>
     <div>
       <div style={{
         position: 'fixed',
@@ -145,6 +146,8 @@ const Works = () => {
       
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

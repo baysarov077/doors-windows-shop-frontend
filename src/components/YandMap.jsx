@@ -5,7 +5,7 @@ import './yand.css'
 const YandMap = () => {
   return (
     <div>
-      <a name="map"></a>
+      <a href="dasd" name="map"><div></div></a>
       <h2 className='yand-heading'>Наше местоположение</h2>
       <YMaps >
         <div className="map">

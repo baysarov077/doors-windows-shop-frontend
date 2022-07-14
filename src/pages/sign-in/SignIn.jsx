@@ -35,7 +35,7 @@ const SignIn = () => {
 
   return (
     <>
-      <div>
+      <div className='login-block'>
         <div className='inputs-block'>
           <input 
             type="text" 
@@ -49,14 +49,14 @@ const SignIn = () => {
             onChange={(e) => handlePassword(e)}
             value={password}
           />
-        </div>
-        <div>
+          <div>
           <button
             onClick={() => handleSubmit()}
             className='submit-btn'
           >
             Войти
           </button>
+        </div>
         </div>
       </div>
     </>  
