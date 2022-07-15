@@ -11,7 +11,7 @@ export const auth = createAsyncThunk(
   "login/user",
   async ({ login, password }, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:4000/login", {
+      const res = await fetch("login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export const auth = createAsyncThunk(
 export const getUser = createAsyncThunk("get/user", async (_, thunkAPI) => {
   const state = thunkAPI.getState();
   try {
-    const res = await fetch("http://localhost:4000/users", {
+    const res = await fetch("users", {
       headers: {
         Authorization: `Bearer ${state.user.token}`,
       },

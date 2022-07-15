@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getPosts = createAsyncThunk("get/todos", async (_, thunkApi) => {
   try {
-    const res = await fetch('http://localhost:4000/posts')
+    const res = await fetch('/posts')
     const data = await res.json()
     return thunkApi.fulfillWithValue(data)
   } catch (error) {
@@ -16,7 +16,7 @@ export const createPosts = createAsyncThunk("add/posts", async ({image, titleVal
     formData.append('img', image)
     formData.append('title', titleValue)
     formData.append('text', textValue)
-    const res = await fetch('http://localhost:4000/posts', {
+    const res = await fetch('posts', {
       method: 'POST',
       body: formData
     })
@@ -29,7 +29,7 @@ export const createPosts = createAsyncThunk("add/posts", async ({image, titleVal
 
 export const deletePosts = createAsyncThunk("delete/posts", async (id, thunkApi) => {
   try {
-    const res = await fetch(`http://localhost:4000/posts/${id}`, {
+    const res = await fetch(`posts/${id}`, {
       method: 'DELETE',
       headers: {
         "Content-Type": "application/json"
