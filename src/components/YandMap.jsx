@@ -12,10 +12,8 @@ const YandMap = () => {
           <Map 
           width={'100%'}
           height={'500px'}
-          defaultState={{ center: [43.31, 45.68], zoom: 10}}>
-            <Placemark geometry={[43.31, 45.68]}/>
-            <Placemark geometry={[43.32, 45.72]} />
-            <Placemark geometry={[43.34, 45.70]} />
+          defaultState={{ center: [43.139920, 45.905241], zoom: 15}}>
+            <Placemark geometry={[43.139920, 45.905241]}/>
           </Map>
         </div>
       </YMaps>

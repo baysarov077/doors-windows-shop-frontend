@@ -24,7 +24,8 @@ const Footer = () => {
         </div>      
         <div className='street'>
           <div>Адрес:</div>
-          <div>ул Г.Трошева 95</div>
+          <div>г. Шали</div>
+          <div>Ул. Гвардейская, 11б</div>
         </div>
       </div>
     </footer>

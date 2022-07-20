@@ -38,14 +38,16 @@ const handleClickLogo = () => {
           <div className='contacts-flex'>
             <span className='contact-word'>Контакты:</span>
           <div>
-            <h5>8-800-555-35-35</h5>
+            <h5 className='street-text'>8-963-590-24-07</h5>
+            <h5 className='street-text'>8-963-590-68-88</h5>
           </div>
           </div>
           <hr />
           <div className='contacts-flex'>
             <div className="contact-word">Адрес:</div>
             <div>
-              <h5>ул. Г.Трошева 95</h5>
+              <h5 className='street-text'>г. Шали</h5>
+              <h5 className='street-text'>Ул. Гвардейская, 11б</h5>
             </div>
           </div>
         </div>

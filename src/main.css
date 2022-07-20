@@ -17,7 +17,11 @@ h1 {
 }
 
 .main-img-block {
-  width: 80%;
+  width: 70%;
+}
+
+.main-img2-block {
+  width: 30%;
 }
 
 .green-color {

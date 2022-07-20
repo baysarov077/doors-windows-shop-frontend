@@ -33,9 +33,6 @@ const Slider = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      style={{
-        maxHeight: '650px'
-      }}
       className="d-block w-100 slide-img"
       src={slider3}
       alt="Third slide"

@@ -9,6 +9,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import icon from './img/58.png'
+import icon2 from './img/59.png'
 import './main.css'
 
 const Main = () => {
@@ -25,7 +26,7 @@ const Main = () => {
           <h2 className='modal-h2'>Наши контакты: </h2>
           <div className='social-list'>
             <a  className='modal-links' href="https://instargram.com"><InstagramIcon className='list-item' fontSize='large' /></a>
-            <a  className='modal-links' href="https://skobelkin.ru/whatsapp/79999999999"><WhatsAppIcon className='list-item' fontSize='large' /></a>
+            <a  className='modal-links' href="https://skobelkin.ru/whatsapp/79635902407"><WhatsAppIcon className='list-item' fontSize='large' /></a>
             <a  className='modal-links' href="https://telegram.me/baysarovv"><TelegramIcon className='list-item' fontSize='large' /></a>
           </div>
           <div style={{
@@ -40,7 +41,10 @@ const Main = () => {
             }}>Номер телефона</div>
             <div style={{
               textAlign: 'center'
-            }}>8-800-555-35-35</div>
+            }}>
+              8-963-590-24-07<br/>
+              8-963-590-68-88
+            </div>
           </div>
         </div>
     }
@@ -56,6 +60,9 @@ const Main = () => {
           <div className="main-img-block">
             <img width="100%" src={icon} alt="error" />
           </div>
+          <div className='main-img2-block'>
+            <img width='100%' src={icon2} alt="none" />
+          </div>
         </div>
         <Slider />
         <Cards />
@@ -70,7 +77,10 @@ const Main = () => {
             <h3 className='call-h3'>Звоните в рабочее время</h3>
           </div>
           <div>
-            <span className='call-number'>8-800-555-35-35</span>
+            <span className='call-number'>
+              8-963-590-24-07<br/>
+              8-963-590-68-88
+            </span>
           </div>
         </div>
       }

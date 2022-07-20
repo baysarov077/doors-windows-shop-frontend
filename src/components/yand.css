@@ -5,6 +5,14 @@
   margin: 50px 0
 }
 
+.location {
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  height: 100px;
+  background-color: red;
+}
+
 @media screen and (max-width: 552px) {
   .yand-heading {
     font-size: 34px;
